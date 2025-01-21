@@ -27,29 +27,28 @@ It's not that Technical, but this stuff actually bother either the Developer or 
 - [Code Clarity]([NTT-04]%20-%20Code%20Clarity.md#code-clarity)
 - [Test Coverage]([NTT-05]%20-%20Test%20Coverage.md#test-coverage)
 
-## Vulerabilities
+# Vulerabilities
 This is where "something bad about to happen" stuff, one miss and millions gone.
 
 - Logic Error
     - General Logic Error
-    - Unintialized Variables / Components
+    - Uninitialized Components
 - Arithmetic Vulnerabilities
-    - Integer Overflow/Underflow
-    - Rounding Error
-- Reentrancy
-    - Single-Function Reentrancy
-    - Cross-Function Reentrancy
-    - Cross-Contract Reentrancy
-    - Read-Only Reentrancy
-- Uninitialized Proxy
+    - [Integer Overflow/Underflow](Vulnerabilities/[V-AV-01]%20-%20Integer%20Overflow%20&%20Underflow.md#integer-overflow--underflow)
+    - [Rounding Error](Vulnerabilities/[V-AV-02]%20-%20Rounding%20Error.md#rounding-error)
+- [Reentrancy](Vulnerabilities/[V-RE-01]%20-%20Reentrancy.md#reentrancy)
+    - [Single-Function Reentrancy](Vulnerabilities/[V-RE-02]%20-%20Single-Function%20Reentrancy.md#single-function-reentrancy)
+    - [Cross-Function Reentrancy](Vulnerabilities/[V-RE-03]%20-%20Cross-Function%20Reentrancy.md#cross-function-reentrancy)
+    - [Cross-Contract Reentrancy](Vulnerabilities/[V-RE-04]%20-%20Cross-Contract%20Reentrancy.md#cross-contract-reentrancy)
+    - [Read-Only Reentrancy](Vulnerabilities/[V-RE-05]%20-%20Read-Only%20Reentrancy.md#read-only-reentrancy)
+- Proxies, Upgradeable Smart Contracts
 - Access Control Vulnerabilities
-    - Weak Identifier
+    - [Weak Identifier](Vulnerabilities/[V-AC-01]%20-%20Weak%20Identifier.md#weak-identifier)
     - Signature Verification
-    - Unprotected Functions
-    - Authentication with `tx.origin`
-    - Reuse of `msg.value`
-- Wrong Implementation of Standards
-- Flashloans
+    - [Unprotected Functions](Vulnerabilities/[V-AC-03]%20-%20Unprotected%20Functions.md#unprotected-functions)
+    - [Authentication with `tx.origin`](Vulnerabilities/[V-AC-04]%20-%20tx.origin%20Authentication.md#txorigin-authentication)
+- [Standards Misimplementation](Vulnerabilities/[V-SMI-01]%20-%20Standards%20Misimplementation.md#standards-misimplementation)
+- Flash loans
 - Unchecked Return Value
 - Insecure Randomness
 - Denial of Service (DoS)
